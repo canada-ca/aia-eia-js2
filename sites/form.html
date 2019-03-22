@@ -24,180 +24,107 @@
 					<th>Question</th>
 					<th>Field</th>
 				</tr>
-<!-- ADD HEADER BOX FOR " ABOUT THE RESPONDENT"-->
+																	<!-- ADD HEADER BOX FOR " ABOUT THE RESPONDENT"-->
 				<tr>
 					<td>Name of Respondent</td>
-					<td><input type="text" name="respondentName"
-						id="respondentName" value=""
-						placeholder="First Name and Last Name"></td>
+					<td><input type="text" name="respondentName" id="respondentName" value=""  placeholder="First Name and Last Name"></td>
 				</tr>
 				<tr>
 					<td>Job Title</td>
-
-					<td><input type="text" name="jobTitle" id="jobTitle" value=""
-						placeholder="1 sentence description"></td>
+					<td><input type="text" name="jobTitle" id="jobTitle" value="" placeholder="1 sentence description"></td>
 				</tr>
 				<tr>
-					<td>Department</td>
+					<td>Department</td>								<!-- replace with reading json file for departments -->
 					<td><select name=“deptName” id=“deptName” size=“1”>
 							<option>Department</option>
 							<option value=“Dept1”>Red</option>
 							<option value=“Dept2”>Blue</option>
 							<option value=“Dept3”>Green</option>
-					</select></td>
+						</select>
+					</td>
 				</tr>
 				<tr>
-					<td>Department2 <!--  Thinking about auto-complete or pull down. -->
-					</td>
-					<td><input type="dept2" name="dept2" id="dept2" value=""
-						placeholder="Type the name of your department" autocomplete="on">
-					</td>
+					
+					<td>Department2</td>							<!--  Thinking about auto-complete or pull down. -->
+					<td><input type="dept2" name="dept2" id="dept2" value="" placeholder="Type the name of your department" autocomplete="on"></td>
 				</tr>
 				<tr>
 					<td>Branch</td>
-					<td><input type="text" name="branch" id="branch" value=""
-						placeholder=""></td>
+					<td><input type="text" name="branch" id="branch" value="" placeholder=""></td>
 				</tr>
 				<tr>
 					<td>Project Title</td>
-					<td>
-					<textarea 
-						name=“descProject” 
-						id=“descProject” 
-						cols=“100”
-						rows=“10”>Enter comments
-					</textarea>
-					</td>
+					<td><textarea name=“descProject” id=“descProject” cols=“100” rows=“10”>Enter comments</textarea></td>
 				</tr>
-
 				<tr>
 					<td>Please provide an attachment of the project description</td>
-
-					<td><input type="file" id="descProjectAtt"
-						name="descProjectAtt"></td>
+					<td><input type="file" id="descProjectAtt" name="descProjectAtt"></td>
 				</tr>
+				
+				
 <!-- ADD HEADER BOX FOR " BUSINESS DRIVER / POSITIVE IMPACT"-->				
 				<tr>
-					<td>What is motivating your team to introduce automation<br>
-						into this decision-making process? (Check all that apply)
-					</td>
-					<td>
-						<input type="checkbox" name="ckReason0" id="ckReason0" value="0" placeholder="">
-						<input type="checkbox" name="ckReason1" id="ckReason1" value="1" placeholder="">
-						<input type="checkbox" name="ckReason2" id="ckReason2" value="2" placeholder=""> 
-						<input type="checkbox" name="ckReason3"	id="ckReason3" value="3" placeholder=""> 
-						<input type="checkbox" name="ckReason4" id="ckReason4" value="4" placeholder="">
-						<input type="checkbox" name="ckReason5" id="ckReason5" value="5" placeholder="">
+					<td>What is motivating your team to introduce automation into this decision-making process? <br>(Check all that apply)
 					</td>
 				</tr>
 				<tr>
-				<td>Existing backlog of work or cases?</td>
-					<td>
-						True: <input type="radio" name="trueBacklog" id="trueBacklog" value="TRUE/VRAIS"> 
-						False: <input type="radio" name="falseBacklog" id="falseBacklog" value="FALSE/FAUX">
-					</td>
+					<td>Existing backlog of work or cases?</td>
+					<td><input type="checkbox" name="trueBacklog" id="trueBacklog" value="TRUE/VRAIS"></td>
 				</tr>
 
 				<tr>
 					<td>Improve overall quality of decisions</td>
-					<td>
-						True: <input type="radio" name="trueQuality" id="trueQuality" value="TRUE/VRAIS"> 
-						False: <input type="radio" name="falseQuality" id="falseQuality" value="FALSE/FAUX">
-					</td>
+					<td><input type="checkbox" name="trueQuality" id="trueQuality" value="TRUE/VRAIS"></td>
 				</tr>
 				<tr>
 					<td>Lower transaction costs of an existing program</td>
-					<td>
-						True: <input type="radio" name="trueLcost" id="trueLcost" value="TRUE/VRAIS"> 
-						False: <input type="radio" name="falseLcost" id="falseQuality" value="FALSE/FAUX">
-					</td>
+					<td><input type="checkbox" name="trueLcost" id="trueLcost" value="TRUE/VRAIS" checked></td>
 				</tr>
 				<tr>
 					<td>The system is performing tasks that humans cound not accomplish in a reasonable period of time</td>
-					<td>
-						True: <input type="radio" name="trueLcost" id="trueLcost" value="TRUE/VRAIS"> 
-						False: <input type="radio" name="falseLcost" id="falseQuality" value="FALSE/FAUX">
-					</td>
+					<td><input type="checkbox" name="trueLcost" id="trueLcost" value="TRUE/VRAIS"></td>
 				</tr>
 				<tr>
-					<td>Use innovative approaches</td>
+					<td>Use Innovative Approaches</td>
 					<td>
-						True: <input type="radio" name="trueInnovateApproach" id="trueInnovateApproach" value="TRUE/VRAIS"> 
-						False: <input type="radio" name="falseInnovateApproach" id="falseInnovateApproach" value="FALSE/FAUX">
+						<input type="checkbox" name="trueInnovateApproach" id="trueInnovateApproach" value="TRUE/VRAIS" checked> 
 					</td>
 				</tr>
 				<tr>
 					<td>Other (please specify)</td>
-					<td>
-					<textarea 
-						name=“descInnovation” 
-						id=descInnovation 
-						cols=“100”
-						rows=“10”>Enter comments
-					</textarea>
-					</td>
+					<td><textarea name=“descInnovation” id=descInnovation cols=“100” rows=“10”>Enter comments</textarea></td>
 				</tr>
-			</table>
+			
 
 <!-- ADD HEADER BOX FOR " ABOUT THE SYSTEM"-->
-			<table class="table">
-				<h3>Please check which of the following capabilities apply to your system.</h3>
+			
 				<tr>
-					<th>Question</th>
+					<th>Please check which of the following capabilities apply to your system.</th>
 					<th>Field</th>
 				</tr>
 				<tr>
-				<td>
-				Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.
-				</td>
-				<td>
-					True: <input type="radio" name="trueOCR" id="trueOCR" value="TRUE/VRAIS"> 
-					False: <input type="radio" name="falseOCR" id="falseOCR" value="FALSE/FAUX">
-				</td>
+					<td> Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.</td>
+					<td><input type="checkbox" name="trueOCR" id="trueOCR" value="TRUE/VRAIS" checked></td>
 				</tr>
-				
-				<td>
-				Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging
-				</td>
-				<td>
-					True: <input type="radio" name="trueVoiceRec" id="trueVoiceRec" value="TRUE/VRAIS"> 
-					False: <input type="radio" name="falseVoiceRec" id="falseVoiceRec" value="FALSE/FAUX">
-				</td>
+					<td>Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging</td>
+					<td><input type="checkbox" name="trueVoiceRec" id="trueVoiceRec" value="TRUE/VRAIS"></td>
 				<tr>
-					<td>
-					Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions
-					</td>
-					<td>
-						True: <input type="radio" name="trueExecuteOrder" id="trueExecuteOrder" value="TRUE/VRAIS"> 
-						False: <input type="radio" name="falseExecuteOrder" id="falseExecuteOrder" value="FALSE/FAUX">
-					</td>
+					<td>Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions</td>
+					<td><input type="checkbox" name="trueExecuteOrder" id="trueExecuteOrder" value="TRUE/VRAIS"></td>
 				</tr>				
 				<tr>
-					<td>
-					Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts
-					</td>
-					<td>
-						True: <input type="radio" name="trueContentGen" id="trueContentGen" value="TRUE/VRAIS"> 
-						False: <input type="radio" name="falseContentGen" id="falseContentGen" value="FALSE/FAUX">
-					</td>
+					<td>Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts</td>
+					<td><input type="checkbox" name="trueContentGen" id="trueContentGen" value="TRUE/VRAIS"></td>
 				</tr>					
 				<tr>
-					<td>
-					Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions
-					</td>
-					<td>
-						True: <input type="radio" name="trueExecuteOrder" id="trueExecuteOrder" value="TRUE/VRAIS"> 
-						False: <input type="radio" name="falseExecuteOrder" id="falseExecuteOrder" value="FALSE/FAUX">
-					</td>
+					<td>Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions</td>
+					<td><input type="checkbox" name="trueExecuteOrder" id="trueExecuteOrder" value="TRUE/VRAIS"></td>
 				</tr>				
 				<tr>
 					<td>
 					Process optimization & workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows
 					</td>
-					<td>
-						True: <input type="radio" name="trueWkflwOptimize" id="trueWkflwOptimize" value="TRUE/VRAIS"> 
-						False: <input type="radio" name="falseWkflwOptimize" id="falseWkflwOptimize" value="FALSE/FAUX">
-					</td>
+					<td><input type="checkbox" name="trueWkflwOptimize" id="trueWkflwOptimize" value="TRUE/VRAIS"></td>
 				</tr>
 			</table>
 			
@@ -211,50 +138,32 @@
 				</tr>
 				<tr>
 					<td>Health related services</td>
-						<td>
-							True: <input type="radio" name="trueHealthCare" id="trueHealthCare" value="TRUE/VRAIS"> 
-							False:<input type="radio" name="falseHealthCare" id="falseHealthCare" value="FALSE/FAUX">
-						</td>
-					</tr>
+					<td><input type="checkbox" name="trueHealthCare" id="trueHealthCare" value="TRUE/VRAIS"></td>
+				</tr>
 				<tr>
-				<td>Economic interests (grants and contributions, tax benefits, debt collection)</td>
-					<td>
-						True: <input type="radio" name="trueGCtaxBenefit" id="trueGCtaxBenefit" value="TRUE/VRAIS"> 
-						False:<input type="radio" name="falseGCtaxBenefit" id="falseGCtaxBenefit" value="FALSE/FAUX">
-					</td>
+					<td>Economic interests (grants and contributions, tax benefits, debt collection)</td>
+					<td><input type="checkbox" name="trueGCtaxBenefit" id="trueGCtaxBenefit" value="TRUE/VRAIS"></td>
 				</tr>
 				<tr>
 					<td>Health related services</td>
-						<td>
-							True: <input type="radio" name="trueHealthCare" id="trueHealthCare" value="TRUE/VRAIS"> 
-							False:<input type="radio" name="falseHealthCare" id="falseHealthCare" value="FALSE/FAUX">
-						</td>
-					</tr>
+					<td><input type="checkbox" name="trueHealthCare" id="trueHealthCare" value="TRUE/VRAIS"></td>
+				</tr>
 				<tr>
-				<td>Social assistance (ei, disability claims, etc)</td>
-					<td>
-						True: <input type="radio" name="trueSocialBenefit" id="trueSocialBenefit" value="TRUE/VRAIS"> 
-						False:<input type="radio" name="falseSocialBenefit" id="falseSocialBenefitt" value="FALSE/FAUX">
-					</td>
+					<td>Social assistance (ei, disability claims, etc)</td>
+					<td><input type="checkbox" name="trueSocialBenefit" id="trueSocialBenefit" value="TRUE/VRAIS"></td>
 				</tr>				
 				<tr>
 					<td>Access and mobility ( security clearences, border crossings)</td>
-						<td>
-							True: <input type="radio" name="trueSecurityClearence" id="trueSecurityClearence" value="TRUE/VRAIS"> 
-							False:<input type="radio" name="falseSecurityClearence" id="falseSecurityClearence" value="FALSE/FAUX">
-						</td>
-					</tr>
+					<td><input type="checkbox" name="trueSecurityClearence" id="trueSecurityClearence" value="TRUE/VRAIS"></td>
+				</tr>
 				<tr>
-				<td>Licensing and issuance of permits</td>
-					<td>
-						True: <input type="radio" name="trueLicensePermit" id="trueLicensePermit" value="TRUE/VRAIS"> 
-						False:<input type="radio" name="falseLicensePermit" id="falseLicensePermit" value="FALSE/FAUX">
-					</td>
+					<td>Licensing and issuance of permits</td>
+					<td><input type="checkbox" name="trueLicensePermit" id="trueLicensePermit" value="TRUE/VRAIS"></td>
 				</tr>				
 				
 				
 			</table>
-				</div>
+		</div>
 		
 	</form>
 	<!--  END OF FORM -->
