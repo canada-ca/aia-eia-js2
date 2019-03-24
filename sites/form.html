@@ -5,8 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" type="text/css"
-	href="../css/customStylesheet.css">
+<link rel="stylesheet" type="text/css"	href="../css/customStylesheet.css">
 <title>aia-eia-js</title>
 </head>
 <header></header>
@@ -58,13 +57,16 @@
 				<tr>
 					<td>Project Title</td>
 					<td><textarea name=“descProject” id=“descProject” cols=“100”
-							rows=“10”>Enter comments</textarea></td>
+							rows=“10” placeholder="Enter comments"></textarea></td>
 				</tr>
 
 				<tr>
-					<td>Please provide an attachment of the project description</td>
+					<td>Please provide an attachment or hyperlink of the project
+						description</td>
 					<td><input type="file" id="descProjectAtt"
-						name="descProjectAtt"></td>
+						name="descProjectAtt"> <input type="url"
+						name="projectLink" id="projectLink"
+						placeholder="https://example.com"></td>
 				</tr>
 			</table>
 		</fieldset>
@@ -107,7 +109,7 @@
 				<tr>
 					<td>Other (please specify)</td>
 					<td><textarea name=“descInnovation” id=descInnovation
-							cols=“100” rows=“10”>Enter comments</textarea></td>
+							cols=“100” rows=“10” placeholder="Enter comments"></textarea></td>
 				</tr>
 			</table>
 		</fieldset>
@@ -125,44 +127,39 @@
 					<th></th>
 				</tr>
 				<tr>
-					<td>Image and object recognition: Analyzing very large data
-						sets to automate the recognition, classification, and context
-						associated with an image or object.</td>
+					<td><span class="emphasis">Image and object
+							recognition:</span> Analyzing very large data sets to automate the
+						recognition, classification, and context associated with an image
+						or object.</td>
 					<td><input type="checkbox" name="trueOCR" id="trueOCR"
 						value="TRUE/VRAIS" checked></td>
 				</tr>
 				<tr>
-					<td>Text and speech analysis: Analyzing large data sets to
-						recognize, process, and tag text, speech, voice, and make
-						recommendations based on the tagging</td>
+					<td><span class="emphasis">Text and speech analysis:</span>
+						Analyzing large data sets to recognize, process, and tag text,
+						speech, voice, and make recommendations based on the tagging</td>
 					<td><input type="checkbox" name="trueVoiceRec"
 						id="trueVoiceRec" value="TRUE/VRAIS"></td>
 				<tr>
-					<td>Risk assessment: Analyzing very large data sets to
-						identify patterns and recommend courses of action and in some
-						cases trigger specific actions</td>
-					<td><input type="checkbox" name="trueExecuteOrder"
-						id="trueExecuteOrder" value="TRUE/VRAIS" checked></td>
-				</tr>
-				<tr>
-					<td>Content generation: Analyzing large data sets to
-						categorize, process, triage, personalize, and serve specific
-						content for specific contexts</td>
+					<td><span class="emphasis">Content generation:</span>
+						Analyzing large data sets to categorize, process,
+						triage, personalize, and serve specific content for specific
+						contexts</td>
 					<td><input type="checkbox" name="trueContentGen"
 						id="trueContentGen" value="TRUE/VRAIS" checked></td>
 				</tr>
 				<tr>
-					<td>Risk assessment: Analyzing very large data sets to
-						identify patterns and recommend courses of action and in some
-						cases trigger specific actions</td>
+					<td><span class="emphasis">Risk assessment:</span> Analyzing
+						very large data sets to identify patterns and recommend courses of
+						action and in some cases trigger specific actions</td>
 					<td><input type="checkbox" name="trueExecuteOrder"
-						id="trueExecuteOrder" value="TRUE/VRAIS"></td>
+						id="trueExecuteOrder" value="TRUE/VRAIS" checked></td>
 				</tr>
 				<tr>
-					<td>Process optimization &#38; workflow automation: Analyzing
-						large data sets to identify and anomalies, cluster patterns,
-						predict outcomes or ways to optimize; and automate specific
-						workflows</td>
+					<td><span class="emphasis">Process optimization &#38;
+							workflow automation:</span> Analyzing large data sets to identify and
+						anomalies, cluster patterns, predict outcomes or ways to optimize;
+						and automate specific workflows</td>
 					<td><input type="checkbox" name="trueWkflwOptimize"
 						id="trueWkflwOptimize" value="TRUE/VRAIS"></td>
 				</tr>
@@ -235,13 +232,13 @@
 				<tr>
 					<td>Describe what is discretionary about the decision</td>
 					<td><textarea name=“descDiscretionary” id=“descDiscretionary”
-							cols=“250” rows=“40”>Enter comments</textarea></td>
+							cols=“250” rows=“40” placeholder="Enter comments"></textarea></td>
 				</tr>
 				<tr>
 					<td>Is the system used by a different part of the organization
 						than the ones who developed it?</td>
 					<td><input type="checkbox" name="trueTransferTech"
-						id="trueTransferTech" value="TRUE/VRAIS"></td>
+						id="trueTransferTech" value="TRUE/VRAIS" checked></td>
 				</tr>
 				<tr>
 					<td>Are the impacts resulting from the decision reversible?</td>
@@ -253,13 +250,13 @@
 				<tr>
 					<td>How long will impacts from the decision last?</td>
 					<td><textarea name=“descImpacts” id=“descImpacts” cols=“100”
-							rows=“10”>Enter comments</textarea></td>
+							rows=“10” placeholder="Enter comments"></textarea></td>
 				</tr>
 				<tr>
 					<td>Please describe why the impacts resulting from the
 						decision are (as per selected option above).</td>
 					<td><textarea name=“descImpacts” id=“descImpacts” cols=“250”
-							rows=“40”>Enter comments</textarea></td>
+							rows=“40” placeholder="Enter comments"></textarea></td>
 				</tr>
 				<tr>
 					<td>the impacts that the decision will have on <span
@@ -267,7 +264,7 @@
 						communities, will likely be:
 					</td>
 					<td><select name=“impact” id=“impact” size=“1”>
-							<option value=“Low>Little to no impact</option>
+							<option value=“Low>little to no impact</option>
 							<option value=“veryHigh”>Very high impact</option>
 					</select>
 				</tr>
@@ -275,7 +272,7 @@
 					<td>Please describe why the impacts resulting from the
 						decision are (as per selected option above).</td>
 					<td><textarea name=“descImpacts1” id=“descImpacts1” cols=“250”
-							rows=“40”>Enter comments</textarea></td>
+							rows=“40” placeholder="Enter comments"></textarea></td>
 				</tr>
 				<tr>
 					<td>the impacts that the decision will have on the <span
@@ -286,14 +283,14 @@
 							<option value="Default: Moderate">Default: Moderate
 								Impact</option>
 							<option value=“Low>Little to no impact</option>
-							<option value=“veryHigh”>Very high impact</option>
+							<option value=“veryHigh”>very high impact</option>
 					</select></td>
 				</tr>
 				<tr>
 					<td>Please describe why the impacts resulting from the
 						decision are (as per selected option above)</td>
 					<td><textarea name=“descImpacts2” id=“descImpacts2” cols=“250”
-							rows=“40”>Enter comments</textarea></td>
+							rows=“40” placeholder="Enter comments"></textarea></td>
 				</tr>
 				<tr>
 					<td>th impacts that the decision will have on the <span
@@ -301,17 +298,16 @@
 						communities, will likely be:
 					</td>
 					<td><select name=“impact2” id=“impact” size=“1”>
-							<option value="Default: Moderate">Default: Moderate
-								Impact</option>
-							<option value=“Low>Little to no impact</option>
+							<option value="littleToNoImpact">little to no impact</option>
 							<option value=“veryHigh”>Very high impact</option>
+							<option value=“moderate”>Moderate impact</option>
 					</select></td>
 				</tr>
 				<tr>
 					<td>Please describe why the impacts resulting from the
 						decision are (as per selected option above)</td>
 					<td><textarea name=“descImpacts3” id=“descImpacts3” cols=“250”
-							rows=“40”>Enter comments</textarea></td>
+							rows=“40” placeholder="Enter comments"></textarea></td>
 
 				</tr>
 				<tr>
@@ -320,8 +316,7 @@
 							ecosystem,</span> will likely be:
 					</td>
 					<td><select name=“impact2” id=“impact” size=“1”>
-							<option value="Default: Moderate">Default: Moderate
-								Impact</option>
+							<option value="Very High Impact">very high impact</option>
 							<option value=“Low>Little to no impact</option>
 							<option value=“veryHigh”>Very high impact</option>
 					</select></td>
@@ -330,7 +325,7 @@
 					<td>Please describe why the impacts resulting from the
 						decision are (as per selected option above)</td>
 					<td><textarea name=“descImpacts3” id=“descImpacts3” cols=“250”
-							rows=“40”>Enter comments</textarea></td>
+							rows=“40” placeholder="Enter comments"></textarea></td>
 				</tr>
 			</table>
 		</fieldset>
@@ -346,16 +341,18 @@
 					<td>Will the Automated Decision System use personal
 						information as input data?</td>
 					<td><input type="checkbox" name="truePersonalInfo"
-						id="truePersonalInfo" value="TRUE/VRAIS"></td>
+						id="truePersonalInfo" value="TRUE/VRAIS" checked></td>
 				</tr>
 				<tr>
 					<td>What is the highest security classification of the input
 						data used by the system? (Select one)</td>
 					<td><select name="securityLevel" id="securityLevel" size=“1”>
-							<option>Unknown</option>
-							<option value=“Unclassified”>Unclassified</option>
+							<option value="unknown">Unknown</option>
+							<option value=“protected”>Protected</option>
 							<option value=“protectedA”>Protected A</option>
 							<option value=“protectedB”>Protected B</option>
+							<option value="classified">Classified</option>
+							<option value="confidential">Confidential</option>
 							<option value=“secret”>Secret</option>
 							<option value=“topSecret”>Top Secret</option>
 					</select></td>
@@ -363,7 +360,7 @@
 				<tr>
 					<td>Who controls the data?</td>
 					<td><textarea name=“descControlData” id=“descControlData”
-							cols=“250” rows=“40”>Enter comments</textarea></td>
+							cols=“250” rows=“40” placeholder="Enter comments"></textarea></td>
 				</tr>
 				<tr>
 					<td>Will the system data use from multiple different sources?</td>
@@ -407,10 +404,9 @@
 				</tr>
 				<tr>
 					<td>What types of unstructured data (Check all that apply)?</td>
-					<td><select name="unstructuredDataType"
-						id="unstructuredDataType" size=“1”>
-							<option>Unknown</option>
-							<option value="#">""</option>
+					<td><select multiple size="5" name="unstructuredDataType"
+						id="unstructuredDataType">
+							<option disabled>HOLD Ctr Button</option>
 							<option value="#">""</option>
 							<option value="#">""</option>
 							<option value="#">""</option>
@@ -419,7 +415,124 @@
 				</tr>
 			</table>
 		</fieldset>
+
+		De-risking and Mitigation Measures
+
+		<fieldset>
+			<legend>Data Quality</legend>
+			<table border=1>
+				<tr>
+					<th>Question</th>
+					<th>Validation</th>
+				</tr>
+				<tr>
+					<td>Have you documented processes in place to test datasets
+						against biases and other unexpected outcomes? This could include
+						experience in applying frameworks, methods, guidelines or other
+						assessment tools.</td>
+					<td><input type="checkbox" name="trueDocumented"
+						id="trueDocumented" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Is there a process currently in place to document how data
+						quality issues were resolved during the design process?</td>
+					<td><input type="checkbox" name="trueResolveDesignIssue"
+						id="trueResolveDesignIssue" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Have you undertaken a Gender Based Analysis Plus of the
+						data?</td>
+					<td><input type="checkbox" name="trueGenderAnalysis"
+						id="trueGenderAnalysis" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Have you assigned accountability in your institution for
+						the design, development, maintenance, and improvement of the
+						system?</td>
+					<td><input type="checkbox" name="trueGovernanceProcess"
+						id="trueGovernanceProcess" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Have you documented processes to manage the risk that
+						outdated or unreliable data is used to make an automated decision?</td>
+					<td><input type="checkbox" name="trueEvalAutoData"
+						id="trueEvalAutoData" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Will the data be posted on Open Gov?</td>
+					<td><input type="checkbox" name="trueGCopenGov"
+						id="trueGCopenGov" value="TRUE/VRAIS" checked></td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>Procedural Fairness</legend>
+			<table border=1>
+				<tr>
+					<th>Question</th>
+					<th>Validation</th>
+				</tr>
+				<tr>
+					<td>Does the system provide an audit trail that records
+						recommendations or decisions?</td>
+					<td><input type="checkbox" name="trueLogSystemDetail"
+						id="trueLogSystemDetail" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Do you maintain a log detailing  all of the changes made
+						to the model and the system ?</td>
+					<td><input type="checkbox" name="trueLogExternalDetail"
+						id="trueLogExternalDetail" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Does the audit trail clearly set out all decision points
+						made by the system?</td>
+					<td><input type="checkbox" name="trueDecisionPoints"
+						id="trueDecisionPoints" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Does the audit trail show who an authorized decision-maker
+						is?</td>
+					<td><input type="checkbox" name="trueLogDecisionMaker"
+						id="trueLogDecisionMaker" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Is there a process in place to log the instances when
+						overrides were performed?</td>
+					<td><input type="checkbox" name="trueOverrideRecord"
+						id="trueOverrideRecord" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Does the audit trail include change control processes to record modifications to the system's operation or performance?</td>
+					<td><input type="checkbox" name="trueChangeLogAuthentication"
+						id="trueChangeLogAuthentication" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Have you prepared a concept case to the Government of Canada Enterprise Architecture Review Baord?</td>
+					<td><input type="checkbox" name="trueEARB"
+						id="trueEARB" value="TRUE/VRAIS" checked></td>
+				</tr>
+
+			</table>
+		</fieldset>
+
 	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
