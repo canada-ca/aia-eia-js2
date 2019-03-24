@@ -5,250 +5,351 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Bootstrap CSS -->
-<!-- <link rel="stylesheet" -->
-<!-- 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" -->
-<!-- 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" -->
-<!-- 	crossorigin="anonymous"> -->
-
+<link rel="stylesheet" type="text/css"
+	href="../css/customStylesheet.css">
 <title>aia-eia-js</title>
 </head>
 <header></header>
-	<body>
-		<h1>Day 1 aia-eia-js Project</h1>
-											<!-- START OF FORM -->
-		<form>
-	
-		<table>
-			<tr>
-				<th>Question</th>
-				<th>Validation</th>
-			</tr>
-																<!-- ADD HEADER BOX FOR " ABOUT THE RESPONDENT"-->
-			<tr>
-				<td>Name of Respondent</td>
-				<td><input type="text" name="respondentName" id="respondentName" value=""  placeholder="First Name and Last Name"></td>
-			</tr>
-			<tr>
-				<td>Job Title</td>
-				<td><input type="text" name="jobTitle" id="jobTitle" value="" placeholder="1 sentence description"></td>
-			</tr>
-			<tr>
-				<td>Department</td>								<!-- replace with reading json file for departments -->
-				<td><select name=“deptName” id=“deptName” size=“1”>
-						<option>Department</option>
-						<option value=“Dept1”>Red</option>
-						<option value=“Dept2”>Blue</option>
-						<option value=“Dept3”>Green</option>
+<body>
+	<h1>Day 2 aia-eia-js Project</h1>
+
+	<form id="AIAform" name="AIAform">
+		<fieldset>
+			<legend>About the Respondent</legend>
+			<table border=1>
+				<tr>
+					<th>Question</th>
+					<th>Validation</th>
+				</tr>
+				<tr>
+					<td>Name of Respondent</td>
+					<td><input type="text" name="respondentName"
+						id="respondentName" value=""
+						placeholder="First Name and Last Name"></td>
+				</tr>
+				<tr>
+					<td>Job Title</td>
+					<td><input type="text" name="jobTitle" id="jobTitle" value=""
+						placeholder="1 sentence description"></td>
+				</tr>
+				<tr>
+					<td>Department</td>
+					<!-- replace with reading json file for departments -->
+					<td><select name=“deptName” id=“deptName” size=“1”>
+							<option>Department</option>
+							<option value=“Dept1”>Dept1</option>
+							<option value=“Dept2”>Dept2</option>
+							<option value=“Dept3”>Dept3</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td>Department2</td>
+					<!--  Thinking about auto-complete or pull down. -->
+					<td><input type="text" name="dept2" id="dept2" value=""
+						placeholder="Type the name of your department" autocomplete="on"></td>
+				</tr>
+
+				<tr>
+					<td>Branch</td>
+					<td><input type="text" name="branch" id="branch" value=""
+						placeholder=""></td>
+				</tr>
+				<tr>
+					<td>Project Title</td>
+					<td><textarea name=“descProject” id=“descProject” cols=“100”
+							rows=“10”>Enter comments</textarea></td>
+				</tr>
+
+				<tr>
+					<td>Please provide an attachment of the project description</td>
+					<td><input type="file" id="descProjectAtt"
+						name="descProjectAtt"></td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>Business Driver / Positive Impact</legend>
+			<table border=1>
+				<tr>
+					<td>What is motivating your team to introduce automation into
+						this decision-making process? (Check all that apply)</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>Existing backlog of work or cases?</td>
+					<td><input type="checkbox" name="trueBacklog" id="trueBacklog"
+						value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Improve overall quality of decisions</td>
+					<td><input type="checkbox" name="trueQuality" id="trueQuality"
+						value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Lower transaction costs of an existing program</td>
+					<td><input type="checkbox" name="trueLcost" id="trueLcost"
+						value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>The system is performing tasks that humans cound not
+						accomplish in a reasonable period of time</td>
+					<td><input type="checkbox" name="trueLcost" id="trueLcost"
+						value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Use Innovative Approaches</td>
+					<td><input type="checkbox" name="trueInnovateApproach"
+						id="trueInnovateApproach" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Other (please specify)</td>
+					<td><textarea name=“descInnovation” id=descInnovation
+							cols=“100” rows=“10”>Enter comments</textarea></td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<fieldset>
+			<legend>About The System</legend>
+			<table border=1>
+				<tr>
+					<th>Question</th>
+					<th>Validation</th>
+				</tr>
+				<tr>
+					<th>Please check which of the following capabilities apply to
+						your system.</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>Image and object recognition: Analyzing very large data
+						sets to automate the recognition, classification, and context
+						associated with an image or object.</td>
+					<td><input type="checkbox" name="trueOCR" id="trueOCR"
+						value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Text and speech analysis: Analyzing large data sets to
+						recognize, process, and tag text, speech, voice, and make
+						recommendations based on the tagging</td>
+					<td><input type="checkbox" name="trueVoiceRec"
+						id="trueVoiceRec" value="TRUE/VRAIS"></td>
+				<tr>
+					<td>Risk assessment: Analyzing very large data sets to
+						identify patterns and recommend courses of action and in some
+						cases trigger specific actions</td>
+					<td><input type="checkbox" name="trueExecuteOrder"
+						id="trueExecuteOrder" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Content generation: Analyzing large data sets to
+						categorize, process, triage, personalize, and serve specific
+						content for specific contexts</td>
+					<td><input type="checkbox" name="trueContentGen"
+						id="trueContentGen" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Risk assessment: Analyzing very large data sets to
+						identify patterns and recommend courses of action and in some
+						cases trigger specific actions</td>
+					<td><input type="checkbox" name="trueExecuteOrder"
+						id="trueExecuteOrder" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Process optimization &#38; workflow automation: Analyzing
+						large data sets to identify and anomalies, cluster patterns,
+						predict outcomes or ways to optimize; and automate specific
+						workflows</td>
+					<td><input type="checkbox" name="trueWkflwOptimize"
+						id="trueWkflwOptimize" value="TRUE/VRAIS"></td>
+				</tr>
+			</table>
+		</fieldset>
+
+
+		<fieldset>
+			<legend>About The Decision</legend>
+			<table border=1>
+				<tr>
+					<th>Question</th>
+					<th>Validation</th>
+				</tr>
+				<tr>
+					<th>Does the decision pertain to any of the categories below
+						(*check all that apply)</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>Health related services</td>
+					<td><input type="checkbox" name="trueHealthCare"
+						id="trueHealthCare" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Economic interests (grants and contributions, tax
+						benefits, debt collection)</td>
+					<td><input type="checkbox" name="trueGCtaxBenefit"
+						id="trueGCtaxBenefit" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Social assistance (ei, disability claims, etc)</td>
+					<td><input type="checkbox" name="trueSocialBenefit"
+						id="trueSocialBenefit" value="TRUE/VRAIS" checked></td>
+				</tr>
+				<tr>
+					<td>Access and mobility ( security clearences, border
+						crossings)</td>
+					<td><input type="checkbox" name="trueSecurityClearence"
+						id="trueSecurityClearence" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Licensing and issuance of permits</td>
+					<td><input type="checkbox" name="trueLicensePermit"
+						id="trueLicensePermit" value="TRUE/VRAIS" checked></td>
+				</tr>
+
+			</table>
+		</fieldset>
+
+
+		<fieldset>
+			<legend>Impact Assessment</legend>
+			<table border=1>
+				<tr>
+					<th>Question</th>
+					<th>Validation</th>
+				</tr>
+				<tr>
+					<th>IMPACT ASSESSMENT</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>Does the recommendation or decision made by the system
+						include elements of discretion?</td>
+					<td><input type="checkbox" name="trueElementsDisc"
+						id="trueElementsDisc" value="TRUE/VRAIS"></td>
+
+				</tr>
+				<tr>
+					<td>Describe what is discretionary about the decision</td>
+					<td><textarea name=“descDiscretionary” id=“descDiscretionary”
+							cols=“250” rows=“40”>Enter comments</textarea></td>
+				</tr>
+				<tr>
+					<td>Is the system used by a different part of the organization
+						than the ones who developed it?</td>
+					<td><input type="checkbox" name="trueTransferTech"
+						id="trueTransferTech" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Are the impacts resulting from the decision reversible?</td>
+					<td><select name="nonReverse" id="nonReverse" size=“1”>
+							<option>Reversible</option>
+							<option value=“nonReverse”>Non-Reversible</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>How long will impacts from the decision last?</td>
+					<td><textarea name=“descImpacts” id=“descImpacts” cols=“100”
+							rows=“10”>Enter comments</textarea></td>
+				</tr>
+				<tr>
+					<td>Please describe why the impacts resulting from the
+						decision are (as per selected option above).</td>
+					<td><textarea name=“descImpacts” id=“descImpacts” cols=“250”
+							rows=“40”>Enter comments</textarea></td>
+				</tr>
+				<tr>
+					<td>the impacts that the decision will have on <span
+						class="emphasis">the rights or freedoms of</span> individuals or
+						communities, will likely be:
+					</td>
+					<td><select name=“impact” id=“impact” size=“1”>
+							<option value=“Low>Little to no impact</option>
+							<option value=“veryHigh”>Very high impact</option>
 					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>Department2</td>							<!--  Thinking about auto-complete or pull down. -->
-				<td><input type="text" name="dept2" id="dept2" value="" placeholder="Type the name of your department" autocomplete="on"></td>
-			</tr>
-			<tr>
-				<td>Branch</td>
-				<td><input type="text" name="branch" id="branch" value="" placeholder=""></td>
-			</tr>
-			<tr>
-				<td>Project Title</td>
-				<td><textarea name=“descProject” id=“descProject” cols=“100” rows=“10”>Enter comments</textarea></td>
-			</tr>
-			<tr>
-				<td>Please provide an attachment of the project description</td>
-				<td><input type="file" id="descProjectAtt" name="descProjectAtt"></td>
-			</tr>
-					
-					
-	<!-- ADD HEADER BOX FOR " BUSINESS DRIVER / POSITIVE IMPACT"-->				
-	
-			<tr>
-				<td>What is motivating your team to introduce automation into this decision-making process? (Check all that apply)</td>
-				<td></td>
-				
-			</tr>
-			<tr>
-				<td>Existing backlog of work or cases?</td>
-				<td><input type="checkbox" name="trueBacklog" id="trueBacklog" value="TRUE/VRAIS"></td>
-			</tr>
-			<tr>
-				<td>Improve overall quality of decisions</td>
-				<td><input type="checkbox" name="trueQuality" id="trueQuality" value="TRUE/VRAIS"></td>
-			</tr>
-			<tr>
-				<td>Lower transaction costs of an existing program</td>
-				<td><input type="checkbox" name="trueLcost" id="trueLcost" value="TRUE/VRAIS" checked></td>
-			</tr>
-			<tr>
-				<td>The system is performing tasks that humans cound not accomplish in a reasonable period of time</td>
-				<td><input type="checkbox" name="trueLcost" id="trueLcost" value="TRUE/VRAIS"></td>
-			</tr>
-			<tr>
-				<td>Use Innovative Approaches</td>
-				<td><input type="checkbox" name="trueInnovateApproach" id="trueInnovateApproach" value="TRUE/VRAIS" checked></td>
-			</tr>
-			<tr>
-				<td>Other (please specify)</td>
-				<td><textarea name=“descInnovation” id=descInnovation cols=“100” rows=“10”>Enter comments</textarea></td>
-			</tr>
-	
-	<!-- ADD HEADER BOX FOR " ABOUT THE SYSTEM"-->
-	
-			<tr>
-				<th>Please check which of the following capabilities apply to your system.</th>
-				<th></th>
-			</tr>
-			<tr>
-				<td> Image and object recognition: Analyzing very large data sets to automate the recognition, classification, and context associated with an image or object.</td>
-				<td><input type="checkbox" name="trueOCR" id="trueOCR" value="TRUE/VRAIS" checked></td>
-			</tr>
-			<tr>
-				<td>Text and speech analysis: Analyzing large data sets to recognize, process, and tag text, speech, voice, and make recommendations based on the tagging</td>
-				<td><input type="checkbox" name="trueVoiceRec" id="trueVoiceRec" value="TRUE/VRAIS"></td>
-			<tr>
-				<td>Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions</td>
-				<td><input type="checkbox" name="trueExecuteOrder" id="trueExecuteOrder" value="TRUE/VRAIS" checked></td>
-			</tr>				
-			<tr>
-				<td>Content generation: Analyzing large data sets to categorize, process, triage, personalize, and serve specific content for specific contexts</td>
-				<td><input type="checkbox" name="trueContentGen" id="trueContentGen" value="TRUE/VRAIS" checked></td>
-			</tr>					
-			<tr>
-				<td>Risk assessment: Analyzing very large data sets to identify patterns and recommend courses of action and in some cases trigger specific actions</td>
-				<td><input type="checkbox" name="trueExecuteOrder" id="trueExecuteOrder" value="TRUE/VRAIS"></td>
-			</tr>				
-			<tr>
-				<td>Process optimization &#38; workflow automation: Analyzing large data sets to identify and anomalies, cluster patterns, predict outcomes or ways to optimize; and automate specific workflows</td>
-				<td><input type="checkbox" name="trueWkflwOptimize" id="trueWkflwOptimize" value="TRUE/VRAIS"></td>
-			</tr>
-	
-	<!-- ADD HEADER BOX FOR " ABOUT THE SYSTEM"-->
-	
-			<tr>
-				<th>Does the decision pertain to any of the categories below (*check all that apply)</th>
-				<th></th>
-			</tr>
-			<tr>
-				<td>Health related services</td>
-				<td><input type="checkbox" name="trueHealthCare" id="trueHealthCare" value="TRUE/VRAIS" checked></td>
-			</tr>
-			<tr>
-				<td>Economic interests (grants and contributions, tax benefits, debt collection)</td>
-				<td><input type="checkbox" name="trueGCtaxBenefit" id="trueGCtaxBenefit" value="TRUE/VRAIS"></td>
-			</tr>
-			<tr>
-				<td>Social assistance (ei, disability claims, etc)</td>
-				<td><input type="checkbox" name="trueSocialBenefit" id="trueSocialBenefit" value="TRUE/VRAIS" checked></td>
-			</tr>				
-			<tr>
-				<td>Access and mobility ( security clearences, border crossings)</td>
-				<td><input type="checkbox" name="trueSecurityClearence" id="trueSecurityClearence" value="TRUE/VRAIS"></td>
-			</tr>
-			<tr>
-				<td>Licensing and issuance of permits</td>
-				<td><input type="checkbox" name="trueLicensePermit" id="trueLicensePermit" value="TRUE/VRAIS" checked></td>
-			</tr>				
-	<!-- ADD HEADER BOX FOR " IMPACT ASSESSMENT"-->
-			<tr>
-				<th>IMPACT ASSESSMENT</th>
-				<th></th>		
-			</tr>
-			<tr>
-				<td>Does the recommendation or decision made by the system include elements of discretion?</td>
-				<td><input type="checkbox" name="trueElementsDisc" id="trueElementsDisc" value="TRUE/VRAIS"></td>
-	
-			</tr>
-			<tr>
-				<td>Describe what is discretionary about the decision</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>Is the system used by a different part of the organization than the ones who developed it?</td>
-				<td><input type="checkbox" name="trueTransferTech" id="trueTransferTech" value="TRUE/VRAIS"></td>
-			</tr>
-			<tr>
-				<td>Are the impacts resulting from the decision reversible?</td>
-				<td><input type="checkbox" name="trueReverse" id="trueReverse" value="TRUE/VRAIS"></td>
-			</tr>
-			<tr>
-				<td>How long will impacts from the decision last?</td>
-				<td><textarea name=“descImpacts” id=“descImpacts” cols=“100” rows=“10”>Enter comments</textarea></td>
-			</tr>
-			<tr>
-				<td>Please describe why the impacts resulting from the decision are (as per selected option above).</td>
-				<td><textarea name=“descImpacts” id=“descImpacts” cols=“250” rows=“40”>Enter comments</textarea></td>
-			</tr>
-			<tr>
-				<td>the impacts that the decision will have on the rights or freedoms of individuals or communities, will likely be:</td>
-				<td><select name=“impact” id=“impact” size=“1”>
-					<option value=“Low>Little to no impact</option>
-					<option value=“veryHigh”>Very high impact</option>
-				</select>
-			</tr>
-			<tr>
-				<td>Please describe why the impacts resulting from the decision are (as per selected option above).</td>
-				<td><textarea name=“descImpacts1” id=“descImpacts1” cols=“250” rows=“40”>Enter comments</textarea></td>
-			</tr>
-			<tr>
-				<td>Are the impacts resulting from the decision reversible?</td>
-				<td><input type="checkbox" name="trueReverse" id="trueReverse" value="TRUE/VRAIS"></td>
-			</tr>
-			<tr>	
-				<td>the impacts that the decision will have on the health and well-being of individuals or communities, will likely be:</td>
-				<td><select name=“impact1” id=“impact” size=“1”>
-					<option value="Default: Moderate">Default: Moderate Impact</option>
-					<option value=“Low>Little to no impact</option>
-					<option value=“veryHigh”>Very high impact</option>
-				</select>
-				</td>
-			</tr>
-			<tr>
-				<td>the impacts that the decision will have on the health and well-being of individuals or communities, will likely be:</td>
-				<td><select name=“impact2” id=“impact” size=“1”>
-					<option value="Default: Moderate">Default: Moderate Impact</option>
-					<option value=“Low>Little to no impact</option>
-					<option value=“veryHigh”>Very high impact</option>
-				</select>
-				</td>
-			</tr>
-			<tr>
-				<td>Please describe why the impacts resulting from the decision are (as per selected option above</td>
-				<td><textarea name=“descImpacts2” id=“descImpacts2” cols=“250” rows=“40”>Enter comments</textarea></td>
-			</tr>
-			<tr>
-				<td>the impacts that the decision will have on the health and well-being of individuals or communities, will likely be:</td>
-				<td><select name=“impact2” id=“impact” size=“1”>
-					<option value="Default: Moderate">Default: Moderate Impact</option>
-					<option value=“Low>Little to no impact</option>
-					<option value=“veryHigh”>Very high impact</option>
-				</select>
-				</td>
-			<tr>
-				<td>Please describe why the impacts resulting from the decision are (as per selected option above</td>
-				<td><textarea name=“descImpacts2” id=“descImpacts2” cols=“250” rows=“40”>Enter comments</textarea></td>
-			</tr>
-			<tr>
-				<td>the impacts that the decision will have on the ongoing sustainability of an environmental ecosystem, will likely be:</td>
-				<td><select name=“impact2” id=“impact” size=“1”>
-					<option value="Default: Moderate">Default: Moderate Impact</option>
-					<option value=“Low>Little to no impact</option>
-					<option value=“veryHigh”>Very high impact</option>
-				</select>
-				</td>
-			</tr>
-			<tr>
-			<td>Please describe why the impacts resulting from the decision are (as per selected option above</td>
-				<td><textarea name=“descImpacts3” id=“descImpacts3” cols=“250” rows=“40”>Enter comments</textarea></td>
-				<td></td>
-			</tr>
-			
-			
-			<!--  STOPPED AT ROW 49 in the Excel document " ABOUT THE DATA " -->
-			
-		</table>
+				</tr>
+				<tr>
+					<td>Please describe why the impacts resulting from the
+						decision are (as per selected option above).</td>
+					<td><textarea name=“descImpacts1” id=“descImpacts1” cols=“250”
+							rows=“40”>Enter comments</textarea></td>
+				</tr>
+				<tr>
+					<td>the impacts that the decision will have on the <span
+						class="emphasis">health and well-being</span> of individuals or
+						communities, will likely be:
+					</td>
+					<td><select name=“impact2” id=“impact” size=“1”>
+							<option value="Default: Moderate">Default: Moderate
+								Impact</option>
+							<option value=“Low>Little to no impact</option>
+							<option value=“veryHigh”>Very high impact</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Please describe why the impacts resulting from the
+						decision are (as per selected option above)</td>
+					<td><textarea name=“descImpacts2” id=“descImpacts2” cols=“250”
+							rows=“40”>Enter comments</textarea></td>
+				</tr>
+				<tr>
+					<td>th impacts that the decision will have on the <span
+						class="emphasis">economic interests</span> of individuals or
+						communities, will likely be:
+					</td>
+					<td><select name=“impact2” id=“impact” size=“1”>
+							<option value="Default: Moderate">Default: Moderate
+								Impact</option>
+							<option value=“Low>Little to no impact</option>
+							<option value=“veryHigh”>Very high impact</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Please describe why the impacts resulting from the
+						decision are (as per selected option above)</td>
+					<td><textarea name=“descImpacts3” id=“descImpacts3” cols=“250”
+							rows=“40”>Enter comments</textarea></td>
+
+				</tr>
+				<tr>
+					<td>the impacts that the decision will have on the <span
+						class="emphasis">ongoing sustainability of an environmental
+							ecosystem,</span> will likely be:
+					</td>
+					<td><select name=“impact2” id=“impact” size=“1”>
+							<option value="Default: Moderate">Default: Moderate
+								Impact</option>
+							<option value=“Low>Little to no impact</option>
+							<option value=“veryHigh”>Very high impact</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Please describe why the impacts resulting from the
+						decision are (as per selected option above)</td>
+					<td><textarea name=“descImpacts3” id=“descImpacts3” cols=“250”
+							rows=“40”>Enter comments</textarea></td>
+				</tr>
+			</table>
+		</fieldset>
+
+
+
+
+
 	</form>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
