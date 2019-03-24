@@ -335,24 +335,97 @@
 			</table>
 		</fieldset>
 
+		<fieldset>
+			<legend>About The Data</legend>
+			<table border=1>
+				<tr>
+					<th>Question</th>
+					<th>Validation</th>
+				</tr>
+				<tr>
+					<td>Will the Automated Decision System use personal
+						information as input data?</td>
+					<td><input type="checkbox" name="truePersonalInfo"
+						id="truePersonalInfo" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>What is the highest security classification of the input
+						data used by the system? (Select one)</td>
+					<td><select name="securityLevel" id="securityLevel" size=“1”>
+							<option>Unknown</option>
+							<option value=“Unclassified”>Unclassified</option>
+							<option value=“protectedA”>Protected A</option>
+							<option value=“protectedB”>Protected B</option>
+							<option value=“secret”>Secret</option>
+							<option value=“topSecret”>Top Secret</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Who controls the data?</td>
+					<td><textarea name=“descControlData” id=“descControlData”
+							cols=“250” rows=“40”>Enter comments</textarea></td>
+				</tr>
+				<tr>
+					<td>Will the system data use from multiple different sources?</td>
+					<td><input type="checkbox" name="connectSource"
+						id="connectSource" value="TRUE/VRAIS"></td>
+				</tr>
+
+				<tr>
+					<td>Will the system require input data from an Internet- or
+						telephony-connected device? (e.g. a sensor)</td>
+					<td><input type="checkbox" name="connectInternet"
+						id="connectInternet" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>Will  the system interface with other IT systems?</td>
+					<td><input type="checkbox" name="interfaceOtherSystem"
+						id="interfaceOtherSystem" value="TRUE/VRAIS"></td>
+				</tr>
+
+				<tr>
+					<td>Who collected the input data used by the system?</td>
+					<td><input type="checkbox" name="whoCollectedDataInput"
+						id="whoCollectedDataInput" value="TRUE/VRAIS"></td>
+				</tr>
+			</table>
+		</fieldset>
 
 
-
-
+		<fieldset>
+			<legend>B. Type of Data</legend>
+			<table border=1>
+				<tr>
+					<th>Question</th>
+					<th>Validation</th>
+				</tr>
+				<tr>
+					<td>Will the system require the analysis of unstructured data
+						to render a recommendation or a decision?</td>
+					<td><input type="checkbox" name="truePersonalInfo"
+						id="truePersonalInfo" value="TRUE/VRAIS"></td>
+				</tr>
+				<tr>
+					<td>What types of unstructured data (Check all that apply)?</td>
+					<td><select name="unstructuredDataType"
+						id="unstructuredDataType" size=“1”>
+							<option>Unknown</option>
+							<option value="#">""</option>
+							<option value="#">""</option>
+							<option value="#">""</option>
+							<option value="#">""</option>
+							<option value="#">""</option>
+					</select></td>
+				</tr>
+			</table>
+		</fieldset>
 	</form>
 
 
 
 
 
-
-
-
-
-
-
 </body>
-
 </html>
 
 
